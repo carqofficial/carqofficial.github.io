@@ -8,7 +8,7 @@ int main()
     i = 1;
     printf("\n");
     printf("\n");
-    printf("\nPrinting the pattern : ");
+    printf("\nPrinting the pattern : \n\n");
 
     while (i <= row)
     {

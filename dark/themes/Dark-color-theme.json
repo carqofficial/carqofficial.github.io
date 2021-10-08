@@ -1,11 +1,17 @@
 {
-	"name": "Dark theme",
+	"name": "Dark",
 	"type": "dark",
 	"colors": {
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#00AA00"
+		},
+		"window.activeBorder": "#eeffff",
 		"editor.background": "#263238",
 		"editor.foreground": "#eeffff",
 		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#bbbbbb"
+		"sideBarTitle.foreground": "#bbbbbb",
+		"window.inactiveBorder": "#3FC1C9",
+		"textBlockQuote.background": "#FDFFBC",
 	},
 	"tokenColors": [
 		{

@@ -3,7 +3,7 @@
 int main()
 {
     int row, i, j;
-    printf("\nHow many rows you wanted to print : ");
+    printf("\nHow many rows does you want to be printed : ");
     scanf("%d", &row);
     i = 1;
 

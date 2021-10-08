@@ -12,7 +12,7 @@ int main()
         j = 1;
         while (j <= i)
         {
-            printf("*");
+            printf("* ");
             j++;
         }
         printf("\n");

@@ -7,6 +7,6 @@ int main()
     printf("\n|        |                    |        |");
     printf("\n+--------+                    +--------+");
 
-
+    printf("\n\n");
     return 0;
 }

@@ -1,0 +1,5 @@
+yo code
+
+// after creating files
+
+code ./filename

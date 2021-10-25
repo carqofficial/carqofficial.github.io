@@ -1,0 +1,4 @@
+#Determine ln(5),with
+#absolute accuracy of 0.001
+#It means first find ln(5) using one term of the series, then store the result in variable s1. Then determine ln(5), taking first two terms of the series and store it in another variable s2. Then find |s1-s2|
+#if |s1-s2| >0.001, then you you determine ln(5), taking first 3 terms of series. Now take the difference between 3 term result and two term result and check if the absolute value of the difference is still >0.001, if true then find the absolute value of the difference between 4 term and 3 term result and check if it>0.001. So you have to continue till |s_(n+1)-s_(n)|<0.001.

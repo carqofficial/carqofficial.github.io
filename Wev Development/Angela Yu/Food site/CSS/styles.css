@@ -1,0 +1,19 @@
+body {
+  background-color: #f8fcff;
+}
+
+img.one {
+  height: "150";
+  width: "300";
+}
+
+h1 {
+  font-family: "Copperplate", Fantasy;
+  color: #000d6b;
+  font-size: 50px;
+}
+
+p {
+  font-family: "Courier New", monospace;
+  color: #091353;
+}

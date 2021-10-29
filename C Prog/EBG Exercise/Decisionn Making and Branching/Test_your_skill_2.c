@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include<conio.h>
+#include <conio.h>
 
 int main()
 {
@@ -111,26 +111,26 @@ MAIN:
     printf("\nNumer of 1 : %d\t\tNumer of 2 : %d\t\tNumer of 3 : %d\nNumer of 4 : %d\t\tNumer of 5 : %d\t\tNumer of 6 : %d\nNumer of 7 : %d\t\tNumer of 8 : %d\t\tNumer of 9 : %d\n\t\t\tNumer of 0 : %d\n\n", N1, N2, N3, N4, N5, N6, N7, N8, N9, (N0 - ASK_0));
     int CHOICE;
 WRN_CHOICE:
-    
+
     printf("\nDo you want to start the program once again?");
     printf("\n--------------------------------------------");
     printf("\n1. Yes\n2. No");
     printf("\n--------------------------------------------\n");
     scanf("%d", &CHOICE);
-    if(CHOICE == 1)
+    if (CHOICE == 1)
     {
         goto MAIN;
     }
-    else if(CHOICE ==2)
+    else if (CHOICE == 2)
     {
         goto END;
     }
-    else if((CHOICE != 1) && (CHOICE != 2))
+    else if ((CHOICE != 1) && (CHOICE != 2))
     {
         printf("\nWrong Input!!\n");
         goto WRN_CHOICE;
     }
-    
+
 END:
     printf("\nPress any key to exit....");
     getch();

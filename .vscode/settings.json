@@ -15,6 +15,7 @@
     },
     "peacock.color": "283149",
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "string.h": "c"
     }
 }

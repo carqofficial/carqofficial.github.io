@@ -3,7 +3,7 @@
 
 int main()
 {
-    int g[5], i, k, ARR, m;
+    int g[6], i, k, ARR, m;
     printf("\nSalary structure of employees in your company : ");
     printf("\n-------------------------");
     printf("\nGroup           Pay-Range");
@@ -15,28 +15,20 @@ int main()
     printf("\n  5            above 6000");
     printf("\n-------------------------\n");
 
-    printf("\nAccording to above data : ");
+    printf("\nAccording to above data : \n");
     for (ARR = 1; ARR <= 5; ARR++)
     {
-        printf("\nEnter the number of employees in  group %d : ", ARR);
-        scanf(" %d", &g[ARR]);
+        printf("Enter the number of employees in  group %d : ", ARR);
+        scanf("%d", &g[ARR]);
     }
+    printf("\n");
 
     for (ARR = 1; ARR <= 5; ARR++)
     {
         printf("\n             |");
         for (i = 1; i <= 3; i++)
         {
-            if (i = 2)
-            {
-                printf("\nGroup-%d      |", k);
-                for (k = 1; k <= g[ARR]; k++)
-                {
-                    printf("*");
-                }
-                printf("     (%d)", g[ARR]);
-            }
-            else
+            if (i != 2)
             {
                 printf("\n             |");
 
@@ -45,8 +37,21 @@ int main()
                     printf("*");
                 }
             }
+            else if (i = 2)
+            {
+                printf("\nGroup-%d      |", ARR);
+                for (k = 1; k <= g[ARR]; k++)
+                {
+                    printf("*");
+                }
+                printf("     (%d)", g[ARR]);
+            }
         }
         printf("\n             |");
+        printf("\n\n");
     }
+    printf("\nPress any key to exit...");
+    getch();
+    printf("\n\n");
     return 0;
 }

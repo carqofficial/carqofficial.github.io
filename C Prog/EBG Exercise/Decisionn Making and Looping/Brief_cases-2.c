@@ -48,8 +48,8 @@ int main()
             }
         }
         printf("\n             |");
-        printf("\n\n");
     }
+    printf("\n\n");
     printf("\nPress any key to exit...");
     getch();
     printf("\n\n");

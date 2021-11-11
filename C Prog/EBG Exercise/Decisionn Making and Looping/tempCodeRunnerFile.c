@@ -1,1 +1,0 @@
-BI_COFFE, m_FAC, x_FAC, mx_FAC;

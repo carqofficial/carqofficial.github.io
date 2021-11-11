@@ -20,5 +20,9 @@
         "math.h": "c",
         "type_traits": "c"
     },
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "cSpell.language": "en,en-GB",
+    "cSpell.enableFiletypes": [
+        "!c"
+    ]
 }

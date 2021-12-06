@@ -22,5 +22,6 @@
     "cSpell.language": "en,en-GB",
     "cSpell.enableFiletypes": [
         "!c"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "Enabled"
 }

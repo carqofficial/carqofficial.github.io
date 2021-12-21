@@ -12,11 +12,13 @@
     },
     "peacock.color": "283149",
     "files.associations": {
+        "*.ejs": "html",
         "stdio.h": "c",
         "string.h": "c",
         "math.h": "c",
         "type_traits": "c",
-        "wchar.h": "c"
+        "wchar.h": "c",
+        "ctype.h": "c"
     },
     "cmake.configureOnOpen": true,
     "cSpell.language": "en,en-GB",

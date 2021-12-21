@@ -31,36 +31,45 @@ int main()
     {
         for (j = 0; j < strlen(NAME[i]); j++)
         {
-            lower_NAME[i][j] = tolower(NAME[i][j]);
+            if ((NAME[i][j] >= 'A') && (NAME[i][j] <= 'Z'))
+            {
+                lower_NAME[i][j] = tolower(NAME[i][j]);
+            }
+            else
+            {
+                lower_NAME[i][j] = NAME[i][j];
+            }
         }
+        lower_NAME[i][strlen(NAME[i])] = '\0';
     }
 
-    for (i = 0; i < (strlen(NAME[i]) - 1); i++)
+    for (i = 0; i < (num - 1); i++)
     {
-        for (j = 0; j < (strlen(NAME[i] - 1 - i)); j++)
+        for (j = (i + 1); j < (num); j++)
         {
-            if (strcmp(lower_NAME[j], lower_NAME[j + 1]) == 0)
+            if (strcmp(lower_NAME[j], lower_NAME[j + 1]) > 0)
             {
-                strcpy(TEMP_NAME, NAME[j]);
-                strcpy(NAME[j + 1], NAME[j]);
+                strcpy(TEMP_NAME, NAME[i]);
+                strcpy(NAME[i], NAME[j]);
                 strcpy(NAME[j], TEMP_NAME);
-                strcpy(TEMP_ROLL, ROLL_NO[j]);
-                strcpy(ROLL_NO[j + 1], ROLL_NO[j]);
+                strcpy(TEMP_ROLL, ROLL_NO[i]);
+                strcpy(ROLL_NO[i], ROLL_NO[j]);
                 strcpy(ROLL_NO[j], TEMP_ROLL);
-                TEMP_MARK = MARKS[j];
-                MARKS[j + 1] = MARKS[j];
+                TEMP_MARK = MARKS[i];
+                MARKS[i] = MARKS[j];
                 MARKS[j] = TEMP_MARK;
             }
         }
     }
 
-    printf("\nRoll No.              Name                   Marks Obtained");
+    printf("\nRoll No.              Name                  Marks Obtained");
     for (i = 0; i < num; i++)
     {
         printf("\n%-22s%-22s%.2lf", ROLL_NO[i], NAME[i], MARKS[i]);
     }
     printf("\n\n");
     printf("press any key to exit.....");
+    getch();
     printf("\n\n");
     return 0;
 }

@@ -9,27 +9,21 @@ struct truct_DATA
     int month;
     int year;
 };
-
 struct DAY_MAX
 {
     int month_max[13];
 };
-
 struct DAY_MIN
 {
     int month_min[13];
 };
-
 typedef struct truct_DATA data;
-
 struct next_DATE
 {
     int adder;
     data next;
 };
-
 typedef struct next_DATE next_data;
-
 void MAX_MIN(struct DAY_MAX *MAX_temp, struct DAY_MIN *MIN_temp)
 {
     MAX_temp->month_max[1] = 31;
@@ -60,7 +54,6 @@ void MAX_MIN(struct DAY_MAX *MAX_temp, struct DAY_MIN *MIN_temp)
     MIN_temp->month_min[12] = 1;
     MIN_temp->month_min[13] = 1;
 }
-
 int YEAR_CHECKER(data new_temp)
 {
     int leapyear_checker, year_zero_counter;
@@ -78,7 +71,23 @@ int YEAR_CHECKER(data new_temp)
     leapyear_checker = (year_zero_counter >= 2) ? (((new_temp.year % 400) == 0) ? 1 : 0) : (((new_temp.year % 4) == 0) ? 1 : 0);
     return (leapyear_checker);
 }
-
+int YEAR_CHECKER_NEXT(next_data *new_next_temp)
+{
+    int leapyear_checker, year_zero_counter;
+    year_zero_counter = 0;
+    char year_buff[1000];
+    int k = snprintf(year_buff, 1000, "%d", new_next_temp->next.year);
+    int i;
+    for (i = 2; i < strlen(year_buff); i++)
+    {
+        if (year_buff[i] == '0')
+        {
+            year_zero_counter++;
+        }
+    }
+    leapyear_checker = (year_zero_counter >= 2) ? (((new_next_temp->next.year % 400) == 0) ? 1 : 0) : (((new_next_temp->next.year % 4) == 0) ? 1 : 0);
+    return (leapyear_checker);
+}
 int MONTH_CHECKER(data *new_temp)
 {
     int month_checker;
@@ -93,7 +102,20 @@ int MONTH_CHECKER(data *new_temp)
     /*printf("month --> %d ", new_temp->month);*/
     return (month_checker);
 }
-
+int MONTH_CHECKER_NEXT(next_data *new_next_temp)
+{
+    int month_checker;
+    month_checker = ((new_next_temp->next.month <= 12) && (new_next_temp->next.month >= 1)) ? 1 : 0;
+    int leap_yr_check;
+    leap_yr_check = YEAR_CHECKER_NEXT(new_next_temp);
+    /*printf("lp_chk --> %d ", leap_yr_check);*/
+    if ((leap_yr_check == 1) && (new_next_temp->next.month == 2))
+    {
+        new_next_temp->next.month = 13;
+    }
+    /*printf("month --> %d ", new_next_temp->next.month);*/
+    return (month_checker);
+}
 int DAY_CHECKER(data new_temp)
 {
     int m;
@@ -163,28 +185,33 @@ int DAY_CHECKER(data new_temp)
         return 1;
     }
 }
-
 int NEXTDATE(data *new_temp, next_data *new_next_temp)
 {
-    new_temp->day = new_temp->day + 1;
+    int m;
+    m = MONTH_CHECKER_NEXT(new_next_temp);
+    new_next_temp->next.day = new_temp->day + new_next_temp->adder;
     struct DAY_MAX Max_DAY;
     struct DAY_MIN Min_DAY;
     MAX_MIN(&Max_DAY, &Min_DAY);
     int kl;
     kl = YEAR_CHECKER(*new_temp);
-    if (new_temp->day > Max_DAY.month_max[new_temp->month])
+    while (new_next_temp->next.day > Max_DAY.month_max[new_next_temp->next.month])
     {
-        /*printf("max --> %d ", Max_DAY.month_max[(new_temp->month)]);
-        printf("day --> %d ", new_temp->day);*/
-
-        new_temp->day = (new_temp->day - Max_DAY.month_max[(new_temp->month)]);
-        if (new_temp->month != 13)
+        new_next_temp->next.day = new_next_temp->next.day - Max_DAY.month_max[new_next_temp->next.month];
+        if (kl == 0)
         {
-            new_temp->month += 1;
+            new_next_temp->next.month += 1;
         }
-        if (new_temp->month == 13)
+        else if (kl == 1)
         {
-            new_temp->month = 3;
+            if (new_next_temp->next.month == 13)
+            {
+                new_next_temp->next.month = 3;
+            }
+            else
+            {
+                new_next_temp->next.month += 1;
+            }
         }
     }
 }
@@ -199,14 +226,13 @@ int main()
     scanf("%d", &new.month);
     printf("Enter the day : ");
     scanf("%d", &new.day);
-    printf("\nEnter number of days to be added to the present day : ");
+    printf("Enter number of days to be added to the present day : ");
     scanf("%d", &new_next.adder);
-    new.day = new_next.next.day;
-    new.month = new_next.next.month;
-    new.year = new_next.next.month;
+    new_next.next.day = new.day;
+    new_next.next.month = new.month;
+    new_next.next.year = new.year;
 
     int mnth_chkr;
-    system("cls");
     mnth_chkr = MONTH_CHECKER(&new);
     if (mnth_chkr == 0)
     {
@@ -225,54 +251,54 @@ int main()
         {
             NEXTDATE(&new, &new_next);
             printf("\nAfter increment : ");
-            switch (new.month)
+            switch (new_next.next.month)
             {
             case 1:
-                printf("\nJanuary %d, %d", new.day, new.year);
+                printf("\nJanuary %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 2:
-                printf("\nFebruary %d, %d", new.day, new.year);
+                printf("\nFebruary %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 3:
-                printf("\nMarch %d, %d", new.day, new.year);
+                printf("\nMarch %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 4:
-                printf("\nApril %d, %d", new.day, new.year);
+                printf("\nApril %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 5:
-                printf("\nMay %d, %d", new.day, new.year);
+                printf("\nMay %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 6:
-                printf("\nJune %d, %d", new.day, new.year);
+                printf("\nJune %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 7:
-                printf("\nJuly %d, %d", new.day, new.year);
+                printf("\nJuly %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 8:
-                printf("\nAugust %d, %d", new.day, new.year);
+                printf("\nAugust %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 9:
-                printf("\nSeptember %d, %d", new.day, new.year);
+                printf("\nSeptember %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 10:
-                printf("\nOctober %d, %d", new.day, new.year);
+                printf("\nOctober %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 11:
-                printf("\nNovember %d, %d", new.day, new.year);
+                printf("\nNovember %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 12:
-                printf("\nDecember %d, %d", new.day, new.year);
+                printf("\nDecember %d, %d", new_next.next.day, new_next.next.year);
                 break;
             case 13:
                 printf("\nThe entered year is a leap year.");
-                printf("\nFebruary %d, %d", new.day, new.year);
+                printf("\nFebruary %d, %d", new_next.next.day, new_next.next.year);
                 break;
             }
         }
     }
 end:
-    printf("\n\npress any key to exit....");
-    getch();
+    /*printf("\n\npress any key to exit....");
+    getch();*/
     printf("\n\n");
     return 0;
 }

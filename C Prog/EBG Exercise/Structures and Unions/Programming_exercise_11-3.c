@@ -11,10 +11,8 @@ struct clock_time
     int minute;
     int second;
 };
-
 typedef struct clock_time tick;
 typedef struct calender_date mark;
-
 struct calender_date
 {
     int day;
@@ -22,7 +20,6 @@ struct calender_date
     int year;
     tick clock;
 };
-
 void update(double t_temp, double start_temp, mark calender_temp)
 {
     double time_taken_temp;

@@ -55,7 +55,7 @@ int YEAR_CHECKER(data new_temp)
     char year_buff[1000];
     int k = snprintf(year_buff, 1000, "%d", new_temp.year);
     int i;
-    for (i = 2; i < strlen(year_buff); i++)
+    for (i = strlen(year_buff) - 2; i < strlen(year_buff); i++)
     {
         if (year_buff[i] == '0')
         {
@@ -81,15 +81,13 @@ int MONTH_CHECKER(data *new_temp)
 }
 int DAY_CHECKER(data new_temp)
 {
-    int m;
-    m = MONTH_CHECKER(&new_temp);
+    MONTH_CHECKER(&new_temp);
     struct DAY_MAX MAX_TEMP;
     struct DAY_MIN MIN_TEMP;
     MAX_MIN(&MAX_TEMP, &MIN_TEMP);
     int i;
     /*printf("month --> %d ", new_temp.month);
     printf("day --> %d ", new_temp.day);
-    printf("m_ret --> %d ", m);
     printf("max day --> %d ", MAX_TEMP.month_max[new_temp.month]);*/
     printf("\n");
     if (new_temp.day > MAX_TEMP.month_max[new_temp.month])
@@ -148,107 +146,98 @@ int DAY_CHECKER(data new_temp)
         return 1;
     }
 }
-int INCREMENT(data *new_temp)
+int COMPARE(data *new1_temp, data *new2_temp)
 {
-    new_temp->day = new_temp->day + 1;
-    struct DAY_MAX Max_DAY;
-    struct DAY_MIN Min_DAY;
-    MAX_MIN(&Max_DAY, &Min_DAY);
-    int kl;
-    kl = YEAR_CHECKER(*new_temp);
-    if (new_temp->day > Max_DAY.month_max[new_temp->month])
+    int rt_COMPARE;
+    if (new1_temp->year > new2_temp->year)
     {
-        /*printf("max --> %d ", Max_DAY.month_max[(new_temp->month)]);
-        printf("day --> %d ", new_temp->day);*/
-
-        new_temp->day = (new_temp->day - Max_DAY.month_max[(new_temp->month)]);
-        if (new_temp->month != 13)
+        rt_COMPARE = 1;
+    }
+    else if (new1_temp->year < new2_temp->year)
+    {
+        rt_COMPARE = 0;
+    }
+    else if (new1_temp->year == new2_temp->year)
+    {
+        if (new1_temp->month == new2_temp->month)
         {
-            new_temp->month += 1;
+            if (new1_temp->day == new2_temp->day)
+            {
+                rt_COMPARE = 5;
+            }
+            else if (new1_temp->day > new2_temp->day)
+            {
+                rt_COMPARE = 1;
+            }
+            else if (new1_temp->day < new2_temp->day)
+            {
+                rt_COMPARE = 0;
+            }
         }
-        if (new_temp->month == 13)
+        else if (new1_temp->month > new2_temp->month)
         {
-            new_temp->month = 3;
+            rt_COMPARE = 1;
+        }
+        else if (new1_temp->month < new2_temp->month)
+        {
+            rt_COMPARE = 0;
         }
     }
+    return (rt_COMPARE);
 }
 
 int main()
 {
-    data new;
+    data new1, new2;
+    printf("\nFor first date : ");
     printf("\nEnter the year : ");
-    scanf("%d", &new.year);
+    scanf("%d", &new1.year);
     printf("Enter the month (number) : ");
-    scanf("%d", &new.month);
+    scanf("%d", &new1.month);
     printf("Enter the day : ");
-    scanf("%d", &new.day);
-    int mnth_chkr;
+    scanf("%d", &new1.day);
+    printf("\nFor second date : ");
+    printf("\nEnter the year : ");
+    scanf("%d", &new2.year);
+    printf("Enter the month (number) : ");
+    scanf("%d", &new2.month);
+    printf("Enter the day : ");
+    scanf("%d", &new2.day);
+    int mnth_chkr1, mnth_chkr2;
+    mnth_chkr1 = MONTH_CHECKER(&new1);
+    mnth_chkr2 = MONTH_CHECKER(&new1);
     system("cls");
-    mnth_chkr = MONTH_CHECKER(&new);
-    if (mnth_chkr == 0)
+    if (mnth_chkr1 == 0)
     {
         printf("\nEntered wrong month number!");
         goto end;
     }
-    else if (mnth_chkr == 1)
+    else if (mnth_chkr2 == 0)
     {
-        int day_chkr;
-        day_chkr = DAY_CHECKER(new);
-        if (day_chkr == 0)
-        {
-            goto end;
-        }
-        else if (day_chkr == 1)
-        {
-            INCREMENT(&new);
-            printf("\nAfter increment : ");
-            switch (new.month)
-            {
-            case 1:
-                printf("\nJanuary %d, %d", new.day, new.year);
-                break;
-            case 2:
-                printf("\nFebruary %d, %d", new.day, new.year);
-                break;
-            case 3:
-                printf("\nMarch %d, %d", new.day, new.year);
-                break;
-            case 4:
-                printf("\nApril %d, %d", new.day, new.year);
-                break;
-            case 5:
-                printf("\nMay %d, %d", new.day, new.year);
-                break;
-            case 6:
-                printf("\nJune %d, %d", new.day, new.year);
-                break;
-            case 7:
-                printf("\nJuly %d, %d", new.day, new.year);
-                break;
-            case 8:
-                printf("\nAugust %d, %d", new.day, new.year);
-                break;
-            case 9:
-                printf("\nSeptember %d, %d", new.day, new.year);
-                break;
-            case 10:
-                printf("\nOctober %d, %d", new.day, new.year);
-                break;
-            case 11:
-                printf("\nNovember %d, %d", new.day, new.year);
-                break;
-            case 12:
-                printf("\nDecember %d, %d", new.day, new.year);
-                break;
-            case 13:
-                printf("\nThe entered year is a leap year.");
-                printf("\nFebruary %d, %d", new.day, new.year);
-                break;
-            }
-        }
+        printf("\nEntered wrong month number!");
+        goto end;
     }
+    int day_chkr1, day_chkr2;
+    day_chkr1 = DAY_CHECKER(new1);
+    day_chkr2 = DAY_CHECKER(new2);
+    int silim_cmp;
+    silim_cmp = COMPARE(&new1, &new2);
+    if (silim_cmp == 1)
+    {
+        printf("First date is later date.");
+    }
+    else if (silim_cmp == 5)
+    {
+        printf("Two dates are same.");
+    }
+    else if (silim_cmp == 0)
+    {
+        printf("First date is earlier than second date.");
+    }
+
 end:
-    printf("\n\npress any key to exit....");
+    printf("\n\n");
+    printf("press any key to exit.....");
     getch();
     printf("\n\n");
     return 0;

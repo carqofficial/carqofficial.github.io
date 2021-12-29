@@ -9,19 +9,15 @@ struct truct_DATA
     int month;
     int year;
 };
-
 struct DAY_MAX
 {
     int month_max[13];
 };
-
 struct DAY_MIN
 {
     int month_min[13];
 };
-
 typedef struct truct_DATA data;
-
 void MAX_MIN(struct DAY_MAX *MAX_temp, struct DAY_MIN *MIN_temp)
 {
     MAX_temp->month_max[1] = 31;
@@ -52,7 +48,6 @@ void MAX_MIN(struct DAY_MAX *MAX_temp, struct DAY_MIN *MIN_temp)
     MIN_temp->month_min[12] = 1;
     MIN_temp->month_min[13] = 1;
 }
-
 int YEAR_CHECKER(data new_temp)
 {
     int leapyear_checker, year_zero_counter;
@@ -70,7 +65,6 @@ int YEAR_CHECKER(data new_temp)
     leapyear_checker = (year_zero_counter >= 2) ? (((new_temp.year % 400) == 0) ? 1 : 0) : (((new_temp.year % 4) == 0) ? 1 : 0);
     return (leapyear_checker);
 }
-
 int MONTH_CHECKER(data *new_temp)
 {
     int month_checker;
@@ -85,7 +79,6 @@ int MONTH_CHECKER(data *new_temp)
     /*printf("month --> %d ", new_temp->month);*/
     return (month_checker);
 }
-
 int DAY_CHECKER(data new_temp)
 {
     MONTH_CHECKER(&new_temp);

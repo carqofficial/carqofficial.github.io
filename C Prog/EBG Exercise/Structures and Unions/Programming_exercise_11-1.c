@@ -11,10 +11,8 @@ struct clock_time
     int minute;
     int second;
 };
-
 typedef struct clock_time tick;
 typedef struct calender_date mark;
-
 struct calender_date
 {
     int day;

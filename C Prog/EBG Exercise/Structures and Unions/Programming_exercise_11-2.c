@@ -11,10 +11,8 @@ struct clock_time
     int minute;
     int second;
 };
-
 typedef struct clock_time tick;
 typedef struct calender_date mark;
-
 struct calender_date
 {
     int day;
@@ -22,7 +20,6 @@ struct calender_date
     int year;
     tick clock;
 };
-
 void print(mark calender_temp)
 {
     printf("\nCurrent time (in 24 hr formate) : %02d:%02d:%02d\n\n", calender_temp.clock.hour, calender_temp.clock.minute, calender_temp.clock.second);

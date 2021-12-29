@@ -70,22 +70,19 @@ int main()
     if (choice == 1)
     {
         SUM(&num1, &num2);
-        cal_prt(&num1, &num2);
     }
     if (choice == 2)
     {
         DIFFERENCE(&num1, &num2);
-        cal_prt(&num1, &num2);
     }
     if (choice == 3)
     {
         PRODUCT(&num1, &num2);
-        cal_prt(&num1, &num2);
     }
     if (choice == 4)
     {
         DIVISION(&num1, &num2);
-        cal_prt(&num1, &num2);
     }
+    cal_prt(&num1, &num2);
     return 0;
 }

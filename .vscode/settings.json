@@ -18,7 +18,9 @@
         "math.h": "c",
         "type_traits": "c",
         "wchar.h": "c",
-        "ctype.h": "c"
+        "ctype.h": "c",
+        "random": "c",
+        "numeric": "c"
     },
     "cmake.configureOnOpen": true,
     "cSpell.language": "en,en-GB",

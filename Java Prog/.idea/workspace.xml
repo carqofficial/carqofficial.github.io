@@ -1,13 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ebb574b-49a6-4b0f-9c43-7cd1688c63b2" name="Changes" comment="" />
+    <list default="true" id="2ebb574b-49a6-4b0f-9c43-7cd1688c63b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Prog/EBG Exercise/User-Defined Functions/Programming_exercise_10-10.c" beforeDir="false" afterPath="$PROJECT_DIR$/../C Prog/EBG Exercise/User-Defined Functions/Programming_exercise_10-10.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Prog/EBG Exercise/User-Defined Functions/Programming_exercise_10-9.c" beforeDir="false" afterPath="$PROJECT_DIR$/../C Prog/EBG Exercise/User-Defined Functions/Programming_exercise_10-9.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java Prog/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Sayan/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Brief_case1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Brief_case2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_10-2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_10-3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_10-3_.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_10-3_1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_10-3_2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_10-4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_10-6.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_10-7.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_10-8.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_10-9.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-12.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-13.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-14.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-16.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-17.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-18.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-18_1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-19.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-6.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-7.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-8.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_8-9.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-10.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-11.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-12.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-13.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-14.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-15.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-16.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-17.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-18.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-20.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-6.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-7.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Programming_exercise_9-8.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Test_your_skill_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/bin_c/Test_your_skill_1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Test_your_skill_2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Test_your_skill_2_1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Test_your_skill_2_2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_10-10.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_10-7.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_10-8.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_10-9.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_8-7.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-10.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-11.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-6-1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-6-2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-6-3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-6.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-7.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-8.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9-9.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/Work_out_9.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/_Programming_exercise_8-16.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/abc.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/abc_1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/selection_sort.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/tempCodeRunnerFile.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/tempCodeRunnerFile.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/bin_c/test.exe" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="50dbd63d-43dc-478f-883a-db75762ef23c" />
+        <option name="url" value="https://github.com/Sayan20012002/programme.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1yYE9BVgYLacJpzDsnFcwBcPMF2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -68,11 +165,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.Sayan.Main" />
       <module name="Java Prog" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
@@ -97,5 +201,16 @@
       <updated>1632419971491</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

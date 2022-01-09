@@ -20,12 +20,14 @@
         "wchar.h": "c",
         "ctype.h": "c",
         "random": "c",
-        "numeric": "c"
+        "numeric": "c",
+        "conio.h": "c"
     },
     "cmake.configureOnOpen": true,
     "cSpell.language": "en,en-GB",
     "cSpell.enableFiletypes": [
         "!c"
     ],
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "Enabled",
+    "git.ignoreLimitWarning": true
 }

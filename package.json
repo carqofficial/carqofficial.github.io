@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "website-scraper": "^5.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.5.1"
   }
 }

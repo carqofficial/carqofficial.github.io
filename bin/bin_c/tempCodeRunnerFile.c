@@ -1,1 +1,0 @@
-printf("First date is earlier than second date.");

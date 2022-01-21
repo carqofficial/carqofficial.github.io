@@ -26,11 +26,12 @@ msgentry.place(x=400,y=70)
 contactentry=Entry(root,font="Helvetica 15 bold italic ")
 contactentry.place(x=400,y=190)
 
-msgcount=Spinbox(root,from_=0 ,to=1000,width=10,font="bold 16")
+msgcount=Spinbox(root,from_=0 ,to=100000,width=10,font="bold 16")
 msgcount.place(x=400,y=120)
 
 def web():
-    driver=webdriver.Chrome()
+    from webdriver_manager.chrome import ChromeDriverManager
+    driver=webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https:web.whatsapp.com/")')
     time.sleep(30)
     pyautogui.press('tab')

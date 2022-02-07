@@ -1,0 +1,28 @@
+/*
+struct data
+{
+    int like_num;
+    int dislike_num;
+    char like_choice[like_num][2000];
+    char dislike_choice[dislike_num][2000];
+};
+typedef stuct data client;
+
+int main()
+{
+    int client_num;
+    scanf("%d", &client_num);
+    client CLNT[client_num];
+    
+}
+*/
+
+/*
+Menu : 
+cheese
+mushrooms 
+tomatoes 
+peppers
+basil
+pineapple
+*/

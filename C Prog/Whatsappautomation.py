@@ -41,6 +41,7 @@ def web():
     pyautogui.typewrite(contact)
     time.sleep(10)
     pyautogui.press('enter')
+    pyautogui.press('enter')
     msg=msgentry.get()
     time.sleep(5)
     for i in range (n):

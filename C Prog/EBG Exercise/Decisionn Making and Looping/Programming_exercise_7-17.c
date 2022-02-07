@@ -4,7 +4,7 @@
 int main()
 {
     int row, i, checker_row, j, int_print, space;
-    printf("\nEnter the numbe of the rows to be printed : ");
+    printf("\nEnter the number of the rows to be printed : ");
     scanf("%d", &row);
     int digi_check, k, count = 0;
     digi_check = (row / 2);

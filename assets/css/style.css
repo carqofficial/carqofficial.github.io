@@ -140,7 +140,7 @@ a:active {
 ----------------------------------------*/
 
 .timing {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .time_circles > div > h4 {
   color: #edb400;
@@ -401,7 +401,7 @@ Responsive Styles
   }
   .blazer {
     position: relative;
-    top: 50%;
+    top: 55%;
     -webkit-transform: translateY(-48%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(0%);
@@ -411,7 +411,8 @@ Responsive Styles
 
   .blazer img {
     position: relative;
-    bottom: 6px;
+    bottom: 46px;
+    top: 26px;
   }
 
   /*--------targetting the opera----------*/

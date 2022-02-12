@@ -620,7 +620,7 @@ button {
 }
 
 button.learn-more {
-  width: 12rem;
+  width: 16rem;
   height: auto;
 }
 
@@ -629,11 +629,13 @@ button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
+  left: 0.225rem;
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #282936;
+  background: #C2FFD9;
   border-radius: 1.625rem;
+  box-shadow: -4px -4px 8px -1px rgba(248, 255, 250, 0.73), 4px 4px 8px rgba(136, 180, 153, 0.89);
 }
 
 button.learn-more .circle .icon {
@@ -662,8 +664,8 @@ button.learn-more .circle .icon.arrow::before {
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
+  border-top: 0.125rem solid #041C32;
+  border-right: 0.125rem solid #041C32;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -676,9 +678,9 @@ button.learn-more .button-text {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 0.75rem 0;
+  padding: 0.8rem 0;
   margin: 0 0 0 1.85rem;
-  color: #282936;
+  color: #FFEDED;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -690,13 +692,13 @@ button:hover .circle {
 }
 
 button:hover .circle .icon.arrow {
-  background: #fff;
+  background: #041C32;
   -webkit-transform: translate(1rem, 0);
           transform: translate(1rem, 0);
 }
 
 button:hover .button-text {
-  color: #fff;
+  color: #041C32;
 }
 
   #container {

@@ -1,77 +1,98 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>CARQ || Responsive Registration Form</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="shortcut icon"
-      type="image/png"
-      href="icons/Big size.png"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
     />
-</head>
+    <link rel="shortcut icon" type="image/png" href="icons/Big size.png" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="title">Registration</div>
-        <div class="content">
-            <form action="#">
-                <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">Full Name</span>
-                        <input type="text" placeholder="Enter your name" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Username</span>
-                        <input type="text" placeholder="Enter your username" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Email</span>
-                        <input type="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Phone Number</span>
-                        <input type="number" placeholder="Enter your number" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Password</span>
-                        <input type="password" placeholder="Enter your password" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Confirm Password</span>
-                        <input type="password" placeholder="Confirm your password" required>
-                    </div>
-                </div>
-                <div class="gender-details">
-                    <input type="radio" name="gender" id="dot-1" required>
-                    <input type="radio" name="gender" id="dot-2" required>
-                    <input type="radio" name="gender" id="dot-3" required>
-                    <span class="gender-title">Gender</span>
-                    <div class="category">
-                        <label for="dot-1">
-                            <span class="dot one"></span>
-                            <span class="gender">Male</span>
-                        </label>
-                        <label for="dot-2">
-                            <span class="dot two"></span>
-                            <span class="gender">Female</span>
-                        </label>
-                        <label for="dot-3">
-                            <span class="dot three"></span>
-                            <span class="gender">Prefer not to say</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="button">
-                    <input type="submit" value="Register">
-                </div>
-            </form>
-        </div>
+      <div class="title">Registration</div>
+      <div class="content">
+        <form method="post" autocomplete="off" name="google-sheet">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" class="form-control" name="name" placeholder="Enter your name" value="" required=""/>
+            </div>
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input type="text" class="form-control" name="username" placeholder="Enter your username" value="" required=""/>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="email" class="form-control" name="email" placeholder="Enter your email" value="" required=""/>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="number" class="form-control" name="number" placeholder="Enter your number" value="" required=""/>
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                name="password"
+                value="" required=""
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input
+                type="password"
+                placeholder="Confirm your password"
+                name="password"
+                value="" required=""
+              />
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" required />
+            <input type="radio" name="gender" id="dot-2" required />
+            <input type="radio" name="gender" id="dot-3" required />
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register" name="submit" class="btnSubmit btn-block"/>
+          </div>
+        </form>
+      </div>
     </div>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxdJCLTdQNrMg4vLdkNK6Zq6GlUBtd9c7cqr3lQq29BMVEvElQhL-2e-MEuYhGXzmFW/exec";
+      const form = document.forms["google-sheet"];
 
-</body>
-
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) =>
+            alert("Thanks for Contacting us..! We Will Contact You Soon...")
+          )
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>

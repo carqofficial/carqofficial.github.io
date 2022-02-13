@@ -46,7 +46,8 @@ form .user-details .input-box {
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
-form .input-box span.details {
+form .input-box span.details,
+.details {
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
@@ -62,6 +63,75 @@ form .input-box span.details {
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
+
+.options {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.container-checkBox {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-checkBox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.container-checkBox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-checkBox input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-checkBox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-checkBox .checkmark:after {
+  top: 7px;
+  left: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
 .user-details .input-box input:active {
   background-color: rgb(180, 237, 255);
 }

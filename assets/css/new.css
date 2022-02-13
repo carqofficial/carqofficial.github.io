@@ -635,7 +635,7 @@ button.learn-more .circle {
   height: 3rem;
   background: #C2FFD9;
   border-radius: 1.625rem;
-  box-shadow: -4px -4px 8px -1px rgba(248, 255, 250, 0.73), 4px 4px 8px rgba(136, 180, 153, 0.89);
+  box-shadow: -2px -2px 4px -1px rgba(248, 255, 250, 0.73), 2px 2px 4px rgba(136, 180, 153, 0.89);
 }
 
 button.learn-more .circle .icon {

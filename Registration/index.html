@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <<meta charset="UTF-8" />
+    <
+    <meta charset="UTF-8" />
     <title>CARQ || Responsive Registration Form</title>
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="icons/Big size.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
@@ -16,57 +17,116 @@
           <div class="user-details">
             <div class="input-box">
               <span class="details">Full Name</span>
-              <input type="text" class="form-control" name="name" placeholder="Enter your name" value="" required=""/>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                placeholder="Enter your name"
+                value=""
+                required=""
+              />
             </div>
             <div class="input-box">
               <span class="details">Email</span>
-              <input type="email" class="form-control" name="email" placeholder="Enter your email" value="" required=""/>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Enter your email"
+                value=""
+                required=""
+              />
             </div>
             <div class="input-box">
               <span class="details">Phone Number</span>
-              <input type="number" class="form-control" name="number" placeholder="Enter your number" value="" required=""/>
+              <input
+                type="number"
+                class="form-control"
+                name="number"
+                placeholder="Enter your number"
+                value=""
+                required=""
+              />
             </div>
             <div class="input-box">
               <span class="details">College Name</span>
-              <input type="text" class="form-control" name="college" placeholder="Enter your college name" value="" required="">
+              <input
+                type="text"
+                class="form-control"
+                name="college"
+                placeholder="Enter your college name"
+                value=""
+                required=""
+              />
             </div>
             <div class="input-box">
               <span class="details">Branch</span>
-              <input type="text" class="form-control" name="branch" placeholder="Enter your branch" value="" required="">
+              <input
+                type="text"
+                class="form-control"
+                name="branch"
+                placeholder="Enter your branch"
+                value=""
+                required=""
+              />
             </div>
             <div class="input-box">
               <label for="workField" class="details">Want to Work For : </label>
-              <select name="workField" id="workField" class=" options" required>
-                  <option value="Space Science">Space Science</option>
-                  <option value="Space Technology">Space Technology & Rocket Tree</option>
-                  <option value="Quantum Computing">Quantum Computing</option>
-                  <option value="Graphic Design">Graphic Design</option>
+              <select name="workField" id="workField" class="options" required>
+                <option value="Space Science">Space Science</option>
+                <option value="Space Technology">
+                  Space Technology & Rocket Tree
+                </option>
+                <option value="Quantum Computing">Quantum Computing</option>
+                <option value="Graphic Design">Graphic Design</option>
               </select>
-          </div>
+            </div>
           </div>
           <div class="gender-details">
-            <input type="radio" name="gender" id="dot-1" value="Male" required />
-            <input type="radio" name="gender" id="dot-2" value="Female" required />
-            <input type="radio" name="gender" id="dot-3" value="Transgender" required />
+            <input
+              type="radio"
+              name="gender"
+              id="dot-1"
+              value="Male"
+              required
+            />
+            <input
+              type="radio"
+              name="gender"
+              id="dot-2"
+              value="Female"
+              required
+            />
+            <input
+              type="radio"
+              name="gender"
+              id="dot-3"
+              value="Transgender"
+              required
+            />
             <div class="input-box">
               <span class="details">Year</span>
-              <label class="container-checkBox">1st
-                  <input type="radio" name="year" value="1st">
-                  <span class="checkmark"></span>
+              <label class="container-checkBox"
+                >1st
+                <input type="radio" name="year" value="1st" />
+                <span class="checkmark"></span>
               </label>
-              <label class="container-checkBox">2nd
-                  <input type="radio" name="year" value="2nd">
-                  <span class="checkmark"></span>
+              <label class="container-checkBox"
+                >2nd
+                <input type="radio" name="year" value="2nd" />
+                <span class="checkmark"></span>
               </label>
-              <label class="container-checkBox">3rd
-                  <input type="radio" name="year" value="3rd">
-                  <span class="checkmark"></span>
+              <label class="container-checkBox"
+                >3rd
+                <input type="radio" name="year" value="3rd" />
+                <span class="checkmark"></span>
               </label>
-              <label class="container-checkBox">4th
-                  <input type="radio" name="year" value="4th">
-                  <span class="checkmark"></span>
+              <label class="container-checkBox"
+                >4th
+                <input type="radio" name="year" value="4th" />
+                <span class="checkmark"></span>
               </label>
-          </div>
+            </div>
             <span class="gender-title">Gender</span>
             <div class="category">
               <label for="dot-1">
@@ -82,9 +142,14 @@
                 <span class="gender">Transgender</span>
               </label>
             </div>
-      </div>
+          </div>
           <div class="button">
-            <input type="submit" value="REGISTER" name="submit" class="btnSubmit btn-block"/>
+            <input
+              type="submit"
+              value="REGISTER"
+              name="submit"
+              class="btnSubmit btn-block"
+            />
           </div>
         </form>
       </div>
@@ -97,9 +162,7 @@
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) =>
-            window.location.href = "Thank/index.html"
-          )
+          .then((response) => (window.location.href = "Thank/index.html"))
           .catch((error) => console.error("Error!", error.message));
       });
     </script>

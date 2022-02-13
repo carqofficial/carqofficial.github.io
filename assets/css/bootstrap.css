@@ -2502,7 +2502,7 @@ input[type="search"] {
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"],
   input[type="time"],
-  input[type="datetime-local"],
+  input[type="date-local"],
   input[type="month"] {
     line-height: 34px;
   }

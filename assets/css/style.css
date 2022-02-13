@@ -546,7 +546,7 @@ Responsive Styles
  }
  .btn-gradient.rounded {
      border-radius: 50%;
-     border: 00px solid rgba(255, 255, 255, 0.671);
+     border: 1px solid rgba(255, 255, 255, 0.671);
  }
  @keyframes Gradient {
      0% {

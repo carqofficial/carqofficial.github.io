@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <
+    
     <meta charset="UTF-8" />
     <title>CARQ || Responsive Registration Form</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="Big size.png"
-    />
+    <link rel="shortcut icon" type="image/png" href="icons/Big size.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -53,23 +49,12 @@
               />
             </div>
             <div class="input-box">
-              <span class="details">College Name</span>
+              <span class="details">Institution/Workplace name</span>
               <input
                 type="text"
                 class="form-control"
-                name="college"
-                placeholder="Enter your college name"
-                value=""
-                required=""
-              />
-            </div>
-            <div class="input-box">
-              <span class="details">Branch</span>
-              <input
-                type="text"
-                class="form-control"
-                name="branch"
-                placeholder="Enter your branch"
+                name="institute"
+                placeholder="Enter your Institution name/Workplace"
                 value=""
                 required=""
               />
@@ -86,7 +71,20 @@
               </select>
             </div>
           </div>
-          <div class="gender-details">
+
+          <div class="input-box">
+            <span class="details">Catatgory</span>
+            <label class="container-checkBox">Student
+              <input type="radio" name="catatgory" value="Student" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container-checkBox">Professional
+              <input type="radio" name="catatgory" value="Professional" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="gender-details" style="margin-top: 14px">
             <input
               type="radio"
               name="gender"
@@ -108,29 +106,6 @@
               value="Transgender"
               required
             />
-            <div class="input-box">
-              <span class="details">Year</span>
-              <label class="container-checkBox"
-                >1st
-                <input type="radio" name="year" value="1st" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container-checkBox"
-                >2nd
-                <input type="radio" name="year" value="2nd" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container-checkBox"
-                >3rd
-                <input type="radio" name="year" value="3rd" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container-checkBox"
-                >4th
-                <input type="radio" name="year" value="4th" />
-                <span class="checkmark"></span>
-              </label>
-            </div>
             <span class="gender-title">Gender</span>
             <div class="category">
               <label for="dot-1">
@@ -147,6 +122,7 @@
               </label>
             </div>
           </div>
+
           <div class="button">
             <input
               type="submit"

@@ -203,7 +203,6 @@ a:active {
   color: #fff;
   padding: 10px 20px;
   border-radius: 46px;
-
 }
 .contact-block .btn-sand {
   background: #417378;
@@ -318,7 +317,7 @@ a:active {
   color: #ececec;
 }
 .blazer ul.social-icon li a {
-  color: #99FEFF;
+  color: #99feff;
   border-radius: 50%;
 }
 
@@ -513,93 +512,93 @@ Responsive Styles
   }
 }
 .dark {
-     margin: 10px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
- }
- .dark .btn-gradient {
-     color: rgba(255, 255, 255);
-     box-shadow: 0 0 5px rgba(255, 255, 255);
- }
- .dark .btn-gradient:hover {
-     color: #fff;
- }
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.dark .btn-gradient {
+  color: rgba(255, 255, 255);
+  box-shadow: 0 0 5px rgba(255, 255, 255);
+}
+.dark .btn-gradient:hover {
+  color: #fff;
+}
 ul {
   padding: 0;
 }
- ul li {
-     list-style: none;
-     display: inline-block;
-     padding: 5px;
- }
- .btn-gradient {
-     width: 60px;
-     height: 60px;
-     text-align: center;
-     display: block;
-     margin: 10px;
-     border-radius: 2px;
-     transition: all 300ms;
- }
- .btn-gradient i {
-     font-size: 30px;
-     line-height: 2.1;
-     vertical-align: middle;
- }
- .btn-gradient.rounded {
-     border-radius: 50%;
-     border: 1px solid rgba(255, 255, 255, 0.671);
- }
- @keyframes Gradient {
-     0% {
-         background-position: 50%;
-     }
-     50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
- }
- .dark .btn-gradient.facebook:hover {
-     box-shadow: 0 5px 8px rgba(26,35,126,0.50);
-     background: #3949ab;
-     background: linear-gradient(to right,#3949ab 0%,#2196f3 100%);
-     background-size: 400%;
-     animation: Gradient 1s ease infinite;
-     box-shadow: 0 0 5px rgba(255, 255, 255);
- }
- .dark .btn-gradient.youtube:hover {
-    box-shadow: 0 5px 8px rgba(244,67,54,0.50);
-    background: #f44336;
-    background: linear-gradient(to right,#f44336 0%,#ff1744 100%);
-    background-size: 400%;
-    animation: Gradient 1s ease infinite;
-    box-shadow: 0 0 5px rgba(255, 255, 255);
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+}
+.btn-gradient {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: block;
+  margin: 10px;
+  border-radius: 2px;
+  transition: all 300ms;
+}
+.btn-gradient i {
+  font-size: 30px;
+  line-height: 2.1;
+  vertical-align: middle;
+}
+.btn-gradient.rounded {
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.671);
+}
+@keyframes Gradient {
+  0% {
+    background-position: 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.dark .btn-gradient.facebook:hover {
+  box-shadow: 0 5px 8px rgba(26, 35, 126, 0.5);
+  background: #3949ab;
+  background: linear-gradient(to right, #3949ab 0%, #2196f3 100%);
+  background-size: 400%;
+  animation: Gradient 1s ease infinite;
+  box-shadow: 0 0 5px rgba(255, 255, 255);
+}
+.dark .btn-gradient.youtube:hover {
+  box-shadow: 0 5px 8px rgba(244, 67, 54, 0.5);
+  background: #f44336;
+  background: linear-gradient(to right, #f44336 0%, #ff1744 100%);
+  background-size: 400%;
+  animation: Gradient 1s ease infinite;
+  box-shadow: 0 0 5px rgba(255, 255, 255);
 }
 .dark .btn-gradient.instagram:hover {
-    box-shadow: 0 5px 8px rgba(63,81,181,0.50);
-    background: #ffc107;
-    background: linear-gradient(to right,#ffc107 0%,#f50057 50%,#3f51b5 100%);
-    background-size: 400%;
-    animation: Gradient 1s ease infinite;
-    box-shadow: 0 0 5px rgba(255, 255, 255);
+  box-shadow: 0 5px 8px rgba(63, 81, 181, 0.5);
+  background: #ffc107;
+  background: linear-gradient(to right, #ffc107 0%, #f50057 50%, #3f51b5 100%);
+  background-size: 400%;
+  animation: Gradient 1s ease infinite;
+  box-shadow: 0 0 5px rgba(255, 255, 255);
 }
 .dark .btn-gradient.twitter:hover {
-    box-shadow: 0 5px 8px rgba(33,150,243,0.50);
-    background: #00bcd4;
-    background: linear-gradient(to right,#00bcd4 0%,#2196f3 100%);
-    background-size: 400%;
-    animation: Gradient 1s ease infinite;
-    box-shadow: 0 0 5px rgba(255, 255, 255);
+  box-shadow: 0 5px 8px rgba(33, 150, 243, 0.5);
+  background: #00bcd4;
+  background: linear-gradient(to right, #00bcd4 0%, #2196f3 100%);
+  background-size: 400%;
+  animation: Gradient 1s ease infinite;
+  box-shadow: 0 0 5px rgba(255, 255, 255);
 }
 .dark .btn-gradient.linkedin:hover {
-    box-shadow: 0 5px 8px rgba(3,169,244,0.50);
-    background: #0288d1;
-    background: linear-gradient(to right,#0288d1 0%,#2196f3 100%);
-    background-size: 400%;
-    animation: Gradient 1s ease infinite;
-    box-shadow: 0 0 5px rgba(255, 255, 255);
+  box-shadow: 0 5px 8px rgba(3, 169, 244, 0.5);
+  background: #0288d1;
+  background: linear-gradient(to right, #0288d1 0%, #2196f3 100%);
+  background-size: 400%;
+  animation: Gradient 1s ease infinite;
+  box-shadow: 0 0 5px rgba(255, 255, 255);
 }

@@ -35,8 +35,9 @@ If you have any feedback, please reach out to us at carqofficial2021@gmail.com
 
 ## Authors of this website
 
-- [@Sayan20012002](https://github.com/Sayan20012002)
-
 - [@Rancho2002](https://github.com/Rancho2002)
 
+- [@Sayan20012002](https://github.com/Sayan20012002)
+
 - [@carqofficial](https://github.com/carqofficial)
+

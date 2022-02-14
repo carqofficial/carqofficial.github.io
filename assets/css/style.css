@@ -526,6 +526,9 @@ Responsive Styles
  .dark .btn-gradient:hover {
      color: #fff;
  }
+ul {
+  padding: 0;
+}
  ul li {
      list-style: none;
      display: inline-block;

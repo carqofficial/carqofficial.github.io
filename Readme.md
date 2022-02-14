@@ -11,7 +11,7 @@
 🥇 Explore Fields like 
 
          1️⃣ Space Science
-         2️⃣ Space Technology & Rocket Tree
+         2️⃣ Space Technology & Rocketry
          3️⃣ Quantum Computing
          4️⃣ Graphic Design
 

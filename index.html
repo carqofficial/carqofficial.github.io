@@ -55,6 +55,18 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
+  <style>
+
+    #register{
+      text-shadow: 4px 4px 4px black;
+      text-decoration: underline;
+    }
+    #register:hover{
+        background: rgb(86, 199, 255);
+        background-size: 100px 20px;
+        transition: .3s;
+    }
+  </style>
   <body>
     <div class="bg">
       <video id="backgroundVideo" autoplay loop playsinline muted>
@@ -84,12 +96,15 @@
                     <div class="timing">
                       <div
                         id="count-down"
-                        data-date="2022-06-05 00:00:00"
+                        data-date="2023-01-09 00:00:00"
                       ></div>
                     </div>
                     <!-- /.timing -->
                   </div>
                 </div>
+                <a href="./Registration/">
+                  <h1 id="register" style="padding: 30px;">Register Now</h1>
+                </a>
                 <div class="row">
                   <div class="col-sm-offset-2 col-sm-8">
                     <p class="alert-success"></p>

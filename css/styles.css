@@ -111,7 +111,7 @@ em {
   border-radius: 30px;
 }
 .bg-nav:hover {
-  background-color: #000000;
+  background-color: #0e0e0e;
   border: solid #a6dfff;
 }
 
@@ -218,7 +218,7 @@ em {
   background-color: #2541FB;
   line-height: 1.5;
   position: relative;
-  background: #000000;
+  background: #1e1e1e;
   border-radius: 23px;
 
   /* experimental code */
@@ -310,7 +310,7 @@ em {
 
 #testimonials {
   text-align: center;
-  background-color: #000000;
+  background-color: #1e1e1e;
 }
 
 .testimonial-image {
@@ -326,7 +326,7 @@ em {
 
 #press {
   text-align: center;
-  background-color: #000000;
+  background-color: #1e1e1e;
   padding: 3%;
 }
 
@@ -388,7 +388,7 @@ em {
 /* call to action */
 
 #call-to-action {
-  background-color: #000000;
+  background-color: #1e1e1e;
   text-align: center;
   padding: 4% 5% 0% 5%;
 }
@@ -415,7 +415,7 @@ em {
 }
 
 .social-media:hover {
-  color: #000000;
+  color: #212121;
 }
 
 .copyright-text {

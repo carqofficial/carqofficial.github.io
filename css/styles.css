@@ -17,7 +17,7 @@
 body {
   margin: 0;
   text-align: center;
-  background-color: #11015a;
+  background-color: #2541FB;
 }
 
 h1 {
@@ -189,7 +189,6 @@ em {
   background-color: #a6dfff;
 }
 
-
 .title-image {
   /* position: absolute; */
   width: 20%;
@@ -201,7 +200,7 @@ em {
 #title {
   /* background: url("../images/new3.jpg") center;
   background-size: cover; */
-  background-color: #11015a;
+  background-color: #2541FB;
   text-align: left;
 }
 
@@ -212,14 +211,36 @@ em {
 /* Features */
 
 #features {
+  /* main code */
   padding: 2% 3% 2% 3%;
   margin: 170px 100px 170px 100px;
+  text-align: center;
+  background-color: #2541FB;
+  line-height: 1.5;
+  position: relative;
+  background: #1e1e1e;
+  border-radius: 23px;
+
+  /* experimental code */
+  /* margin: 170px 100px 170px 100px;
   text-align: center;
   background-color: #11015a;
   line-height: 1.5;
   position: relative;
-  background: #070026;
-  border-radius: 23px;
+  box-sizing: border-box;
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.18) 17.94%,
+      rgba(255, 255, 255, 0.0576) 100%
+    )
+    warning: gradient uses a rotation that is not supported by CSS and may not behave as expected;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: -4px 4px 25px 5px rgba(0, 10, 48, 0.484),
+    4px -4px 25px 5px rgba(0, 10, 48, 0.484);
+  backdrop-filter: blur(22px);
+  border-radius: 23px; */
+
+  /* unnecessary code */
   /* box-shadow: 0px 15px 15px 15px rgba(11, 0, 74, 0.612); */
   /* display: flex;
   justify-content: center;
@@ -289,7 +310,7 @@ em {
 
 #testimonials {
   text-align: center;
-  background-color: #151515;
+  background-color: #1e1e1e;
 }
 
 .testimonial-image {
@@ -305,7 +326,7 @@ em {
 
 #press {
   text-align: center;
-  background-color: #151515;
+  background-color: #1e1e1e;
   padding: 3%;
 }
 
@@ -367,7 +388,7 @@ em {
 /* call to action */
 
 #call-to-action {
-  background-color: #151515;
+  background-color: #1e1e1e;
   text-align: center;
   padding: 4% 5% 0% 5%;
 }
